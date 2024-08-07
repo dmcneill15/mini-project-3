@@ -2,6 +2,7 @@
 import NavBar from '../components/NavBar'
 import './globals.css'
 import { Inter } from 'next/font/google' // supports google fonts
+import Image from "next/image";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
   // Root layout must render the <html> and <body> elements
   return (
     <html lang="en">
-      <body className={inter.className}><NavBar />{children}</body>
+      <body className={inter.className}>
+        <NavBar />
+        {children}
+        </body>
     </html>
   )
 }
