@@ -113,14 +113,33 @@ a {
   font-family: 'Poppins', sans-serif;
 }
 
-.NavBar ul {
+.NavBar {
   display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.NavBar li a {
+.NavMain {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 150px;
+  margin-right: 120px;
+}
+
+.NavIcons {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.NavIcons li {
+  margin: 0 10px;
+}
+
+.NavMain li a {
   padding: 0.8em;
   text-transform: uppercase;
   display: inline-block;
