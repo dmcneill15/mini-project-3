@@ -5,7 +5,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 function PizzaCard() {
 
     return (
-        <Row xs={1} md={2} className="g-4">
+        <Row xs={6} md={6} className="g-4">
             {Array.from({ length: 4 }).map((_, idx) => (
                 <Col key={idx}>
                     <Card>
