@@ -1,8 +1,8 @@
 // Modified from app/layout.js - the root app layout
-import NavBar from '../components/NavBar'
 import './globals.css'
 import { Inter } from 'next/font/google' // supports google fonts
-import Image from "next/image";
+import NavBar from '../components/NavBar'
+import { Footer } from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,13 +14,13 @@ export const metadata = {
 
 // All layouts support nesting via children prop
 export default function RootLayout({ children }) {
-  // Root layout must render the <html> and <body> elements
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <NavBar />
-        {children}
-        </body>
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }

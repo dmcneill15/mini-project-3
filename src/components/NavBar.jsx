@@ -30,5 +30,3 @@ function NavBar() {
     )
 }
 export default NavBar
-
-//to color the icons: style={{ color: '#db472d' }}
