@@ -22,8 +22,8 @@ function NavBar() {
                     <li><Link href="/contact" className={path.startsWith('/contact') ? 'active' : null}>Contact</Link></li>
                 </ul>
                 <ul className="NavIcons">
-                    <li><Link href="/"><SearchIcon fontSize="medium" /></Link></li>
-                    <li><Link href="/"><ShoppingCartIcon fontSize="medium" /></Link></li>
+                    <li><Link href="/"><SearchIcon style={{fontSize:"30px"}} /></Link></li>
+                    <li><Link href="/"><ShoppingCartIcon style={{fontSize:"30px"}} /></Link></li>
                 </ul>
             </nav>
         </header>

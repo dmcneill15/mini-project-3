@@ -21,8 +21,12 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  color: #db472d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -115,10 +119,11 @@ a {
 .footer {
   text-align: center;
   margin: 0px;
-  padding-top:20px;
+  padding-top:20px; 
 }
 
 .footer > a {
+  color: black;
   text-decoration: underline;
 }
 
