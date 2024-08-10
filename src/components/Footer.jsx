@@ -1,7 +1,7 @@
 'use client' // client component, not server rendered
 import Link from "next/link"
 
-export function Footer() {
+function Footer() {
 
     return (
         <footer className="footer">
@@ -11,3 +11,5 @@ export function Footer() {
         </footer>
     )
 }
+
+export default Footer
