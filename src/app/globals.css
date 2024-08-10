@@ -102,7 +102,7 @@ a {
     color: #db472d;
 }
 
-.card {
+.pzza-card {
   max-width: 250px;
 }
 
@@ -120,4 +120,8 @@ a {
 
 .footer > a {
   text-decoration: underline;
+}
+
+.icon{
+  margin-right:10px;
 }

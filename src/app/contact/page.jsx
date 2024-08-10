@@ -1,15 +1,15 @@
-import Link from 'next/link'
-import styles from '../page.module.css'
+import ContactInfoCards from "@/components/ContactInfoCards"
 
 export default function Contact() {
     return (
-        <main className={styles.main}>
+        <div>
             <section>
                 <div className="title-container">
                     <h1 className="slogan">Contact</h1>
-                    <p>This is the Contact page.</p>
                 </div>
             </section>
-        </main>
+
+            <ContactInfoCards />
+        </div>
     )
 }
