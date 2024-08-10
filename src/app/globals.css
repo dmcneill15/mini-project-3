@@ -87,15 +87,6 @@ body {
   overflow-x: hidden;
 }*/
 
-.custom-card-col {
-  flex: 0 0 auto;
-  max-width: 20px; /* Set your desired max width */
-}
-
-.custom-card {
-  width: 100%;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -170,4 +161,14 @@ a {
 
 .NavBar li a.active {
     color: #db472d;
+}
+
+.card {
+  max-width: 250px;
+}
+
+.custom-col{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: 'Poppins', sans-serif;
 }
