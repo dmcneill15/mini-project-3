@@ -31,7 +31,7 @@ const pizzaData = [
     {
         id: 5,
         image: '/images/spicey.png',
-        title: 'Spice Slice',
+        title: 'Spicey Slice',
         price: '$21.99',
     },
     {
@@ -52,7 +52,7 @@ function PizzaCard() {
                             <Card.Body>
                                 <Card.Title className='fs-5'>{pizza.title}</Card.Title>
                                 <Card.Text>{pizza.price}</Card.Text>
-                                <button type="button" class="btn btn-outline-danger">Add to Cart</button>
+                                <Button type="submit" variant="outline-danger">Add to Cart</Button>
                             </Card.Body>
                         </Card>
                     </Col>

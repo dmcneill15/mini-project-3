@@ -1,9 +1,9 @@
+'use client' // client component, not server rendered
 import Link from 'next/link'
-import styles from '../page.module.css'
 
 export default function About() {
     return (
-        <main className={styles.main}>
+        <main>
             <section>
                 <div className="title-container">
                     <h1 className="slogan">Coming soon...</h1>
