@@ -14,11 +14,25 @@ async function getOrders() {
     }
 }
 
+async function getFilteredOrders(){
+    const baseUrl = "http://localhost:3001";
+
+    try {
+        const response = await fetch(`${baseUrl}/api/orders/status=new`, { 'cache': 'no-cache' });
+        const ordersArray = await response.json();
+        return ordersArray;
+    } catch (error) {
+        console.error('Failed to fetch orders:', error);
+        return [];
+    }
+}
+
 export default async function OrdersDashboard() {
     
     let ordersJSX;
     try{
-        const ordersArray = await getOrders();
+        //const ordersArray = await getOrders();
+        const ordersArray = await getFilteredOrders();
         //console.log(JSON.stringify(ordersArray));
         ordersJSX = <Orders orders={ordersArray}></Orders>
     }
