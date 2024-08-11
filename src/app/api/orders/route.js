@@ -1,4 +1,4 @@
-import { RepsponseBuilder } from "@/lib/response-builder"
+import { ResponseBuilder } from "@/lib/response-builder"
 
 let orders = [
     {
@@ -23,7 +23,8 @@ let orders = [
 
 //http://localhost:3001/api/orders gets all the oders
 export function GET() {
-    return RepsponseBuilder.successResponse(orders);    //reuseable & unit testable
+    console.log("Request Recieved");
+    return ResponseBuilder.successResponse(orders);    //reuseable & unit testable
 }
 
 export async function POST(req){
@@ -32,9 +33,9 @@ export async function POST(req){
 
     //this validation can be moved into a separate function
     if(!order.id){
-        return RepsponseBuilder.invalidRequest('Invalid Order ID'); 
+        return ResponseBuilder.invalidRequest('Invalid Order ID'); 
     }
 
     orders.push(order);
-    return RepsponseBuilder.successResponse({'message':'order added'}); 
+    return ResponseBuilder.successResponse({'message':'order added'}); 
 }

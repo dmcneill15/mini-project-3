@@ -1,7 +1,5 @@
 'use client' // client component, not server rendered
-
 import { Button, Card, Col, Row, Container } from 'react-bootstrap';
-import Image from "next/image";
 
 const pizzaData = [
     {
