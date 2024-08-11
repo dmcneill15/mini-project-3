@@ -17,7 +17,7 @@ function NavBar() {
             <nav className="NavBar">
                 <ul className="NavMain">
                     <li><Link href="/" className={path === '/' ? 'active' : null}>Home</Link></li>
-                    <li><Link href="/orders" className={path.startsWith('/orders') ? 'active' : null}>Orders</Link></li>
+                    <li><Link href="/ordersDashboard" className={path.startsWith('/ordersDashboard') ? 'active' : null}>Orders</Link></li>
                     <li><Link href="/about" className={path.startsWith('/about') ? 'active' : null}>About</Link></li>
                     <li><Link href="/contact" className={path.startsWith('/contact') ? 'active' : null}>Contact</Link></li>
                 </ul>
