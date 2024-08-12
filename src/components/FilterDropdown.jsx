@@ -3,10 +3,8 @@ import { useState } from 'react'
 import { Dropdown } from 'react-bootstrap';
 
 function FilterDropdown({ pizzaList, onFilterChange }) {
-    const [selectedFilter, setSelectedFilter] = useState('All');
 
     const handleSelect = (eventKey) => {
-        setSelectedFilter(eventKey);
         onFilterChange(eventKey);
     };
 
