@@ -1,5 +1,7 @@
 'use client' // client component, not server rendered
 import { Button, Card, Col, Row, Container, CardFooter } from 'react-bootstrap';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function PizzaCard({ pizzaList }) {
     return (
@@ -10,7 +12,13 @@ function PizzaCard({ pizzaList }) {
                         <Card className='border-light border-2 text-center' style={{ backgroundColor: '#eeeade'}}>
                             <Card.Img className="mx-auto pt-2" style={{ width: '180px', height: 'auto' }} src={pizza.image} />
                             <Card.Body>
-                                <Card.Title className='fs-5'>{pizza.title}</Card.Title>
+                                <Card.Title className='fs-5'>
+                                    {pizza.title}
+                                    {pizza.tag === 'favourite' ? <FavoriteIcon style={{ color: 'red', marginLeft: '10px' }} /> : null}
+                                    {pizza.tag === 'spicey' ? <LocalFireDepartmentIcon style={{ color: 'red', marginLeft: '10px' }} /> : null}
+
+
+                                </Card.Title>
                                 <Card.Text>{pizza.price}</Card.Text>
                                <CardFooter style={{ backgroundColor: '#eeeade'}}> <Button type="submit" variant="outline-danger">Add to Cart</Button></CardFooter>
                             </Card.Body>
@@ -23,3 +31,4 @@ function PizzaCard({ pizzaList }) {
 }
 
 export default PizzaCard
+//{path.startsWith('/ordersDashboard') ? 'active' : null}>
