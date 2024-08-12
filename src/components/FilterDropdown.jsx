@@ -1,11 +1,23 @@
 'use client' // client component, not server rendered
-import { Button, Card, Col, Row } from 'react-bootstrap';
-import pizzaData from '@/data/pizzaData';
+import { Dropdown} from 'react-bootstrap';
 
-function PizzaCard() {
+function FilterDropdown({list}) {
     return (
-        <Row xs={1} sm={2} md={4} className="g-4 justify-content-center">
-                {pizzaData.map(pizza => (
+        <Dropdown>
+          <Dropdown.Toggle variant="danger" id="dropdown-basic">Filter</Dropdown.Toggle>
+          {/*<Dropdown.Menu>
+            {list.map(item => (
+                <Dropdown.Item href="#/action-1">{item.title}</Dropdown.Item>
+            ))};
+          </Dropdown.Menu>*/}
+        </Dropdown>
+    )
+}
+
+export default FilterDropdown
+
+
+/*{pizzaData.map(pizza => (
                     <Col key={pizza.id} className=" custom-col d-flex justify-content-center">
                         <Card className='border-light border-2 text-center' style={{ backgroundColor: '#eeeade', width:'250px' }}>
                             <Card.Img className="mx-auto" style={{ width: '180px', height: 'auto' }} src={pizza.image} />
@@ -16,9 +28,4 @@ function PizzaCard() {
                             </Card.Body>
                         </Card>
                     </Col>
-                ))}
-        </Row>
-    )
-}
-
-export default PizzaCard
+                ))} */

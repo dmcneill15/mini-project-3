@@ -1,8 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-//import styles from "./page.module.css";
 import PizzaCard from "@/components/PizzaCard";
+import FilterDropdown from '@/components/FilterDropdown';
 
 export default function Home() {
+
+
+
   return (
     <main>
       <section>
@@ -10,6 +13,7 @@ export default function Home() {
           <h1 className="slogan">Slices worth melting for...</h1>
           <p className="menuHeading">Order Online</p>
         </div>
+        <FilterDropdown />
       </section>
       <div>
         <PizzaCard />
