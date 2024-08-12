@@ -16,7 +16,6 @@ async function getOrders() {
 
 async function getFilteredOrders(){
     const baseUrl = "http://localhost:3000";
-
     try {
         const response = await fetch(`${baseUrl}/api/orders/status=new`, { 'cache': 'no-cache' });
         const ordersArray = await response.json();
