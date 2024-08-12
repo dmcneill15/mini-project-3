@@ -1,7 +1,7 @@
 import { ResponseBuilder } from "@/lib/response-builder"
 import orders from './orders';
 
-//http://localhost:3001/api/orders gets all the oders
+//http://localhost:3000/api/orders gets all the oders
 export function GET() {
     console.log("Request Recieved");
     return ResponseBuilder.successResponse(orders);    //reuseable & unit testable

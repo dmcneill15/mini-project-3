@@ -23,7 +23,7 @@ function NavBar() {
                 </ul>
                 <ul className="NavIcons">
                     <li><Link href="/"><SearchIcon style={{fontSize:"30px"}} /></Link></li>
-                    <li><Link href="/"><ShoppingCartIcon style={{fontSize:"30px"}} /></Link></li>
+                    <li><Link href="/cart"><ShoppingCartIcon style={{fontSize:"30px"}} /></Link></li>
                 </ul>
             </nav>
         </header>

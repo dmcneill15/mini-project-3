@@ -2,7 +2,7 @@ import styles from '../page.module.css'
 import Orders from '@/components/Orders';
 
 async function getOrders() {
-    const baseUrl = "http://localhost:3001";
+    const baseUrl = "http://localhost:3000";
 
     try {
         const response = await fetch(`${baseUrl}/api/orders`, { 'cache': 'no-cache' });
@@ -15,7 +15,7 @@ async function getOrders() {
 }
 
 async function getFilteredOrders(){
-    const baseUrl = "http://localhost:3001";
+    const baseUrl = "http://localhost:3000";
 
     try {
         const response = await fetch(`${baseUrl}/api/orders/status=new`, { 'cache': 'no-cache' });
