@@ -1,5 +1,6 @@
 import styles from '../page.module.css'
 import Orders from '@/components/Orders';
+import ContactInfoCards from '@/components/ContactInfoCards';
 
 async function getOrders() {
     const baseUrl = "http://localhost:3000";

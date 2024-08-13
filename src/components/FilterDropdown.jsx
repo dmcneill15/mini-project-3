@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { Dropdown } from 'react-bootstrap';
 
-function FilterDropdown({ pizzaList, onFilterChange }) {
+function FilterDropdown({ list, onFilterChange }) {
 
     const handleSelect = (eventKey) => {
         onFilterChange(eventKey);
@@ -13,7 +13,7 @@ function FilterDropdown({ pizzaList, onFilterChange }) {
             <Dropdown.Toggle variant="danger" id="dropdown-basic">Filter</Dropdown.Toggle>
             <Dropdown.Menu>
                 <Dropdown.Item eventKey="All">All</Dropdown.Item>
-                {pizzaList.map(item => (
+                {list.map(item => (
                     <Dropdown.Item key={item.id} eventKey={item.title}>{item.title}</Dropdown.Item>
                 ))};
             </Dropdown.Menu>
