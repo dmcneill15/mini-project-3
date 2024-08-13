@@ -1,6 +1,6 @@
 import styles from '../page.module.css'
 import Orders from '@/components/Orders';
-import ContactInfoCards from '@/components/ContactInfoCards';
+import OrdersAccordion from '@/components/OrdersAccordion'
 
 async function getOrders() {
     const baseUrl = "http://localhost:3000";
@@ -34,14 +34,16 @@ export default async function OrdersDashboard() {
         //const ordersArray = await getOrders();
         const ordersArray = await getFilteredOrders();
         //console.log(JSON.stringify(ordersArray));
-        ordersJSX = <Orders orders={ordersArray}></Orders>
+
+        //ordersJSX = <Orders orders={ordersArray}></Orders>
+        ordersJSX = <OrdersAccordion orders={ordersArray}></OrdersAccordion>
     }
     catch(error){
         ordersJSX = <span>Unable to Fetch Orders</span>
     }
 
     return (
-        <main className={styles.main}>
+        <main className>
             <section>
                 <div className="title-container">
                     <h1 className="slogan">Orders</h1>
