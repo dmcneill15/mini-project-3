@@ -1,3 +1,4 @@
+'use client'
 import ContactInfoCards from "@/components/ContactInfoCards"
 
 export default function Contact() {
