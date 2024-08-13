@@ -27,7 +27,7 @@ export default function Home() {
           <p className="menuHeading" style={{margin:"0"}}>Order Online</p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'right', paddingBottom: '30px', marginRight:'5em'}}>
-          <FilterDropdown pizzaList={pizzaData} onFilterChange={handleFilterChange}/>
+          <FilterDropdown list={pizzaData} onFilterChange={handleFilterChange}/>
         </div>
       </section>
       <div>
