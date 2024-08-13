@@ -16,8 +16,6 @@ function PizzaCard({ pizzaList }) {
                                     {pizza.title}
                                     {pizza.tag === 'favourite' ? <FavoriteIcon style={{ color: 'red', marginLeft: '10px' }} /> : null}
                                     {pizza.tag === 'spicey' ? <LocalFireDepartmentIcon style={{ color: 'red', marginLeft: '10px' }} /> : null}
-
-
                                 </Card.Title>
                                 <Card.Text>{pizza.price}</Card.Text>
                                <CardFooter style={{ backgroundColor: '#eeeade'}}> <Button type="submit" variant="outline-danger">Add to Cart</Button></CardFooter>
@@ -31,4 +29,3 @@ function PizzaCard({ pizzaList }) {
 }
 
 export default PizzaCard
-//{path.startsWith('/ordersDashboard') ? 'active' : null}>

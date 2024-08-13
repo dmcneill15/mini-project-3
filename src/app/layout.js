@@ -1,6 +1,7 @@
 // Modified from app/layout.js - the root app layout
 import './globals.css'
 import NavBar from '@/components/NavBar'
+import navList from '@/data/navList'
 import Footer from '@/components/Footer'
 
 // Exported metadata will appear in the <head> section

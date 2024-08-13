@@ -1,5 +1,4 @@
 'use client' // client component, not server rendered
-import { useState } from 'react'
 import { Dropdown } from 'react-bootstrap';
 
 function FilterDropdown({ list, onFilterChange }) {
