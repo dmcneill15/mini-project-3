@@ -14,7 +14,7 @@ function FilterDropdown({ list, onFilterChange }) {
                 <Dropdown.Item eventKey="All">All</Dropdown.Item>
                 {list.map(item => (
                     <Dropdown.Item key={item.id} eventKey={item.title}>{item.title}</Dropdown.Item>
-                ))};
+                ))}
             </Dropdown.Menu>
         </Dropdown>
     )
