@@ -24,9 +24,9 @@ export default function Home() {
       <section>
         <div className="title-container">
           <h1 className="slogan">Slices worth melting for...</h1>
-          <p className="menuHeading" style={{margin:"0"}}>Order Online</p>
+          <p className="h5 m-0">Order Online</p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'right', paddingBottom: '10px', marginRight:'5em'}}>
+        <div className="pb-2 d-flex justify-content-end custom-mr-5em">
           <FilterDropdown list={pizzaData} onFilterChange={handleFilterChange}/>
         </div>
       </section>
