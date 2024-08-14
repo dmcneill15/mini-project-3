@@ -7,7 +7,6 @@ export default async function Cart() {
     const session = await getServerSession(options);
 
     const user = session?.user.name;
-    console.log(user);
 
     return (
         <div>

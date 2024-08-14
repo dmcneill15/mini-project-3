@@ -4,7 +4,7 @@ import Link from "next/link"
 function Footer() {
 
     return (
-        <footer className="footer">
+        <footer className="footer pt-4">
             All rights reserved<br />
             Follow Us: <Link href="#"> Facebook </Link> | <Link href="#"> Instagram </Link> |
             <Link href="#"> Twitter </Link>

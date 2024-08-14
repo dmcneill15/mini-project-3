@@ -43,7 +43,7 @@ export default async function OrdersDashboard() {
     }
 
     return (
-        <main className>
+        <main>
             <section>
                 <div className="title-container">
                     <h1 className="slogan">Orders</h1>

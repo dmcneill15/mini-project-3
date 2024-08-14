@@ -12,10 +12,10 @@ export default function ContactInfoCards() {
         <Container className='justify-content-center align-items-center'>
             <Row xs={1} sm={2} md={3} className="justify-content-center">
                 <Col className="justify-content-center">
-                    <Card className='border-0' style={{}}>
+                    <Card className='border-0'>
                         <Card.Body>
-                            <Card.Title style={{fontSize:'18px', fontWeight: 'bold' }}><p>We are here to help and answer any questions that you might have.</p></Card.Title>
-                            <Card.Subtitle className="mb-2" style={{ fontWeight: 'bold' }}><p>Here's how to reach us:</p></Card.Subtitle>
+                            <Card.Title className="fw-bold h5"><p>We are here to help and answer any questions that you might have.</p></Card.Title>
+                            <Card.Subtitle className="mb-2 fw-bold"><p>Here's how to reach us:</p></Card.Subtitle>
                             <Card.Text><PinDropIcon className='icon' fontSize="small" />123 Mountain Road, Auckland</Card.Text>
                             <Card.Text><PhoneIphoneIcon className='icon' fontSize="small" />+64 21 345678</Card.Text>
                             <Card.Text><EmailIcon className='icon' fontSize="small" />threecheeses@pizzanow.co.nz</Card.Text>
@@ -49,4 +49,3 @@ export default function ContactInfoCards() {
         </Container >
     )
 }
-

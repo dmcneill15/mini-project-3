@@ -38,7 +38,7 @@ a:hover {
 .title-container {
   text-align: center;
   margin:0;
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .slogan {
@@ -51,7 +51,7 @@ a:hover {
 
 
 .NavHeader {
-  padding: 20px 0; /* Spacing inside the header */
+  padding: 10px 0px 00px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;

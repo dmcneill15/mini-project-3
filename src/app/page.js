@@ -26,7 +26,7 @@ export default function Home() {
           <h1 className="slogan">Slices worth melting for...</h1>
           <p className="menuHeading" style={{margin:"0"}}>Order Online</p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'right', paddingBottom: '30px', marginRight:'5em'}}>
+        <div style={{ display: 'flex', justifyContent: 'right', paddingBottom: '10px', marginRight:'5em'}}>
           <FilterDropdown list={pizzaData} onFilterChange={handleFilterChange}/>
         </div>
       </section>
