@@ -8,9 +8,9 @@ export default function OrdersAccordion({ orders }) {
             <Container className='justify-content-center align-items-center'>
                 <Row xs={1} sm={2} md={2} className="g-4 justify-content-center">
                     <Col className="g-4 justify-content-center">
-                        <Card className="border-light border-2" style={{ marginBottom: '20px' }}>
+                        <Card className="border-light border-2">
                             <Card.Body>
-                                <Card.Title style={{ fontSize: '18px', fontWeight: 'bold' }}><p>No Orders</p></Card.Title>
+                                <Card.Title className="h6"><p>No orders placed here yet...</p></Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -20,10 +20,10 @@ export default function OrdersAccordion({ orders }) {
     }
 
     return (
-        <Container className="align-items-center">
-            <Accordion className="justify-content-center bg-transparent">
+        <Container className="d-flex justify-content-center">
+            <Accordion className="custom-width">
                 {orders.map(order => (
-                    <Accordion.Item key={order.id} eventKey={order.id} className="border-light border-2 bg-transparent">
+                    <Accordion.Item key={order.id} eventKey={order.id} className="border-light border-2">
                         <Accordion.Header>Order ID: {order.id}</Accordion.Header>
                         <Accordion.Body>
                             Customer: {order.customerName}<br></br>

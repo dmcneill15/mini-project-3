@@ -6,13 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-/*
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}*/
-
 body {
   margin: 0;
   padding: 0;
@@ -29,12 +22,6 @@ a:hover {
   color: #db472d;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .title-container {
   text-align: center;
   margin:0;
@@ -47,6 +34,7 @@ a:hover {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin:0;
 }
 
 
@@ -133,4 +121,23 @@ a:hover {
 
 .custom-mr-8em{
   margin-right:8em;
+}
+
+.custom-width{
+  width:600px;
+  max-width: 600px;
+}
+
+.custom-bg-color{
+  background-color: #eeeade !important;
+}
+
+.pizza-img-size{
+  width: 180px !important;
+  height: 'auto'
+}
+
+.custom-icon-style{
+  color: red; 
+  margin-left: 10px
 }

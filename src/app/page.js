@@ -26,7 +26,7 @@ export default function Home() {
           <h1 className="slogan">Slices worth melting for...</h1>
           <p className="h5 m-0">Order Online</p>
         </div>
-        <div className="pb-2 d-flex justify-content-end custom-mr-5em">
+        <div className="pb-2 d-flex justify-content-end custom-mr-8em">
           <FilterDropdown list={pizzaData} onFilterChange={handleFilterChange}/>
         </div>
       </section>

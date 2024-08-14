@@ -8,9 +8,9 @@ export default function Orders({ orders }) {
             <Container className='justify-content-center align-items-center'>
                 <Row xs={1} sm={2} md={2} className="g-4 justify-content-center">
                     <Col className="g-4 justify-content-center">
-                        <Card className="border-light border-2" style={{ marginBottom: '20px' }}>
+                        <Card className="border-light border-2">
                             <Card.Body>
-                                <Card.Title style={{ fontSize: '18px', fontWeight: 'bold' }}><p>No Orders</p></Card.Title>
+                                <Card.Title className="h6"><p>No orders placed here yet...</p></Card.Title>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -24,9 +24,9 @@ export default function Orders({ orders }) {
             {orders.map(order => (
                 <Row key={order.id} xs={1} sm={2} md={2} className="g-4 justify-content-center">
                     <Col key={order.id} className="g-4 justify-content-center">
-                        <Card className="border-light border-2" style={{ marginBottom: '20px' }}>
+                        <Card className="border-light border-2 mb-3">
                             <Card.Body>
-                                <Card.Title style={{ fontSize: '18px', fontWeight: 'bold' }}><p>Order ID: {order.id}</p></Card.Title>
+                                <Card.Title className="fw-bold h6"><p>Order ID: {order.id}</p></Card.Title>
                                 <Card.Text>
                                     Customer: {order.customerName}<br></br>
                                     Pizza: {order.pizzaType}<br></br>
