@@ -8,9 +8,9 @@ export class ResponseBuilder {
         })
     }
 
-    static invalidRequest(errorMessage){
+    static invalidRequest(errorMessage, statusCode){
         return new Response(JSON.stringify({error: errorMessage}),{
-            status:400,
+            status:statusCode,
             headers:{'Content-Type':'application/json'}
         })
     }

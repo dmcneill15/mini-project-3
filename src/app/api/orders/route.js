@@ -13,8 +13,8 @@ export async function POST(req){
     const order = body;             //order will be in the body of the request
 
     //this validation can be moved into a separate function
-    if(!order.id){
-        return ResponseBuilder.invalidRequest('Invalid Order ID'); 
+    if(!order.id || !order.customerName || !order.pizzaType || !order.quantity){
+        return ResponseBuilder.invalidRequest('Order is not complete', 400); 
     }
 
     orders.push(order);
